@@ -1,0 +1,46 @@
+{% extends 'freegram/base.html' %}
+{% block title %}
+    Instaclone
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-3 pt-5">
+            <img src="" alt="" class="rounded-circle w-100">
+        </div>
+        <div class="col-md-9 pt-5">
+            <div class="d-flex justify-content-between align-items-baseline">
+                <div class="d-flex align-content-center pb-4">
+                    <div class="h4">Fred</div>
+                    <button type="submit" class="btn btn-primary btn-sm ml-4">Follow</button>
+                </div>
+                <a href="{% url 'freegram:create' %}">Add New Post</a>
+            </div>
+            <div class="d-flex">
+                <div class="pr-5"><strong>10k</strong> Posts</div>
+                <div class="pr-5"><strong>50k</strong> Follwers</div> 
+                <div class="pr-5"><strong>100k</strong> Follwing</div>
+            </div>
+            <a href="{% url 'freegram:createuser'  %}">Add New Profile</a>
+            <div class="font-weight-bold pt-4">Fred</div>
+                <div>
+                    This is the profile about nothing and nobody.
+                </div>
+        </div>
+        </div>
+        <div class="row pt-5 pb-5">
+            {% if posts %}
+            {% for post in posts %}
+            <div class="col-4">
+                <a href="{% url 'freegram:details' post.slug %}">
+                    <img src="{{ post.image.url }}" alt="{{ post.caption }}" class="w-100" >
+                </a>
+            </div>
+            {% endfor %}
+            {% else %}
+                <p class="text-danger">There are no posts available.</p>    
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
