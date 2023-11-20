@@ -43,6 +43,8 @@ Specify guidelines for contributions if you're open to collaborators.
 
 It's not fully functional, but yeah, I'll probably get back to it when I have some time.
 
-## screenshot
+## screenshots
 
-![Alt text](image.png)
+![image](https://github.com/FREDVUNI/django-instagram-clone/assets/41730664/51f2c3c7-4ab4-47d5-83d9-2d587bdd1d18)
+![image](https://github.com/FREDVUNI/django-instagram-clone/assets/41730664/a7cf08f0-4cfc-4beb-8b95-24974e163139)
+
