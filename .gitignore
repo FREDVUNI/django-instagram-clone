@@ -1,0 +1,16 @@
+# Django related
+gram/freegram/__pycache__/
+gram/freegram/migrations/
+
+# Python virtual environment
+env/
+
+# SQLite database file
+db.sqlite3
+
+# Media folder (uploaded user content)
+media/
+
+# Compiled Python files
+*.pyc
+*.pyo

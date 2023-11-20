@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('freegram/',include('freegram.urls'))
+    path('',include('freegram.urls'))
 ]
 
 if settings.DEBUG:
